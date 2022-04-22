@@ -1,0 +1,27 @@
+Chat/InputProducer.java
+ Chat.InputProducer
+Chat/PrinterConsumer.java
+ Chat.PrinterConsumer
+Chat/SenderConsumer.java
+ Chat.SenderConsumer
+Veterinarian/MyThread.java
+ Veterinarian.MyThread
+Veterinarian/WaitingRoom.java
+ Veterinarian.WaitingRoom
+Chat/Main.java
+ Chat.Main
+Chat/ReceiverProducer.java
+ Chat.ReceiverProducer
+Chat/MultiServer.java
+ Chat.MultiServer
+Chat/Queue.java
+ Chat.Queue
+Veterinarian/Main.java
+ Veterinarian.Main
+JSON/StudentClient.java
+ JSON.Exam
+ JSON.Residence
+ JSON.Student
+ JSON.StudentClient
+JSON/UniversityServer.java
+ JSON.UniversityServer
