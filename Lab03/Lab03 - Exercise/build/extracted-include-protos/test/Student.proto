@@ -1,0 +1,19 @@
+package it.ewlab.student;
+
+message Student {
+    required string name = 1;
+    required string surname = 2;
+    required int32 birthYear = 3;
+    message Residence {
+        required string city = 1;
+        required string address = 2;
+        required string cap = 3;
+    };
+    required Residence residence = 4;
+    message Exam {
+        required string name = 1;
+        required string date = 2;
+        required int32 mark = 3;
+    };
+    repeated Exam exams = 5;
+}

@@ -1,0 +1,52 @@
+/*
+SimpleSum:
+given two integers, it returns their sum (try to build this method synchronously and asynchronously)
+
+• RepeatedSum:
+given two numbers n and t, the service returns a stream of t numbers. The first value of the stream is n,
+the second n+n, the third n+n+n, and so on, until the stream contains t values
+
+• StreamSum:
+the client sends on the stream couples of numbers to sum up, the server returns their sum
+*/
+syntax = "proto3";
+package com.example.grpc;
+
+service SimpleSum {
+  rpc streamSimpleSum (SimpleSumRequest) returns (SimpleSumResponse) {}
+}
+
+message SimpleSumRequest {
+  int32 n1 = 1;
+  int32 n2 = 2;
+}
+
+message SimpleSumResponse {
+  int32 sum = 1;
+}
+
+service RepeatedSum {
+  rpc streamRepeatedSum (RepeatedSumRequest) returns (stream RepeatedSumResponse) {}
+}
+
+message RepeatedSumRequest {
+  int32 n = 1;
+  int32 t = 2;
+}
+
+message RepeatedSumResponse {
+  int32 sum = 1;
+}
+
+service StreamSum {
+  rpc streamStreamSum (stream StreamSumRequest) returns (stream StreamSumResponse) {}
+}
+
+message StreamSumRequest{
+  int32 n1 = 1;
+  int32 n2 = 2;
+}
+
+message StreamSumResponse {
+  int32 sum = 1;
+}
