@@ -25,4 +25,5 @@ hs_err_pid*
 #cartelle repo del prof.
 setup_grpc/
 setup_test_sdp/
+setup_rest_mqtt/
 Lab02/Repo
